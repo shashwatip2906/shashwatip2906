@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shashwati Pingalkar — Data Science Student &amp; Builder</title>
+<meta name="description" content="Portfolio of Shashwati Pingalkar, B.Tech Data Science student at SPPU Pune, building projects in Python, machine learning, and software engineering.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%238b5cf6%22/></svg>">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<canvas id="star-field" aria-hidden="true"></canvas>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="#hero" class="nav-mark"><span class="dot" aria-hidden="true"></span> Shashwati</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Learning</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#masters">Master's Goal</a></li>
+      <li><a href="#presence">Presence</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Personal Portfolio</span>
+        <h1>SHASHWATI</h1>
+        <p class="hero-role">Data Science Student <span class="sep">·</span> Builder <span class="sep">·</span> Learner <span class="sep">·</span> Explorer</p>
+        <p class="hero-desc">I learn by building, solve problems through code, and turn ideas into practical projects.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/shashwatip2906" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="#projects">Projects</a>
+          <a class="btn btn-outline" href="#journey">Journey</a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <strong>B.Tech Data Science</strong>
+            SPPU Pune
+          </div>
+          <div class="hero-meta-item">
+            <strong>Preparing for</strong>
+            Master's abroad
+          </div>
+          <div class="hero-meta-item">
+            <strong>Focus tracks</strong>
+            DS · ML · SWE
+          </div>
+        </div>
+      </div>
+
+      <div class="character-stage">
+        <div class="character-glow" aria-hidden="true"></div>
+
+        <!-- ============ ORIGINAL ANIME-STYLE CHARACTER (self-contained SVG) ============ -->
+        <svg id="character-svg" viewBox="0 0 460 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="charTitle charDesc">
+          <title id="charTitle">Illustrated portrait of an anime-style software and data-science developer</title>
+          <desc id="charDesc">An original anime-inspired character with violet hair, seated at a laptop in a dark futuristic setting. Her eyes follow the visitor's cursor.</desc>
+
+          <defs>
+            <radialGradient id="skinGrad" cx="45%" cy="35%" r="70%">
+              <stop offset="0%" stop-color="#ffe3ce"/>
+              <stop offset="100%" stop-color="#f3c8ab"/>
+            </radialGradient>
+            <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#7c3aed"/>
+              <stop offset="45%" stop-color="#5b21b6"/>
+              <stop offset="100%" stop-color="#2e1065"/>
+            </linearGradient>
+            <linearGradient id="hairHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="clothGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1e1b3a"/>
+              <stop offset="100%" stop-color="#100e24"/>
+            </linearGradient>
+            <linearGradient id="clothTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#4fd1ff"/>
+              <stop offset="100%" stop-color="#8b5cf6"/>
+            </linearGradient>
+            <radialGradient id="cheekGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f78fb3" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#f78fb3" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="deskGlow" cx="50%" cy="0%" r="80%">
+              <stop offset="0%" stop-color="#4fd1ff" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#4fd1ff" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="6"/>
+            </filter>
+          </defs>
+
+          <!-- backdrop glow behind character -->
+          <ellipse cx="230" cy="230" rx="200" ry="200" fill="url(#deskGlow)" opacity="0.5"/>
+
+          <!-- ===== Laptop / desk (behind torso) ===== -->
+          <g id="desk">
+            <rect x="120" y="470" width="220" height="14" rx="4" fill="#1a1730" stroke="#3a3560" stroke-width="1"/>
+            <rect x="150" y="418" width="160" height="54" rx="8" fill="url(#clothGrad)" stroke="#4b3f8a" stroke-width="1.5"/>
+            <rect x="160" y="426" width="140" height="34" rx="4" fill="#0c0a1a"/>
+            <rect x="168" y="432" width="60" height="4" rx="2" fill="#4fd1ff" opacity="0.8"/>
+            <rect x="168" y="440" width="90" height="3" rx="1.5" fill="#8b5cf6" opacity="0.6"/>
+            <rect x="168" y="447" width="45" height="3" rx="1.5" fill="#8b5cf6" opacity="0.45"/>
+          </g>
+
+          <!-- ===== Body / clothing ===== -->
+          <g id="body">
+            <path d="M115 560 C110 470 150 410 230 405 C310 410 350 470 345 560 Z" fill="url(#clothGrad)"/>
+            <path d="M230 405 C260 407 285 420 300 445 L290 470 C270 450 250 442 230 440 C210 442 190 450 170 470 L160 445 C175 420 200 407 230 405 Z" fill="#161329" stroke="url(#clothTrim)" stroke-width="2"/>
+            <path d="M230 440 L230 560" stroke="url(#clothTrim)" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="230" cy="452" r="3" fill="#4fd1ff"/>
+            <circle cx="230" cy="470" r="3" fill="#4fd1ff" opacity="0.7"/>
+            <circle cx="230" cy="488" r="3" fill="#4fd1ff" opacity="0.45"/>
+          </g>
+
+          <!-- ===== Neck ===== -->
+          <path id="neck" d="M205 350 L205 400 Q230 415 255 400 L255 350 Z" fill="url(#skinGrad)"/>
+          <path d="M205 358 Q230 372 255 358" stroke="#d9a980" stroke-width="1.5" opacity="0.4" fill="none"/>
+
+          <!-- ===== Hair back layer ===== -->
+          <path id="hairBack" d="M230 60
+            C 150 60 100 130 100 220
+            C 100 300 115 380 140 430
+            C 130 360 128 300 140 250
+            C 132 320 150 380 175 415
+            C 165 340 168 270 185 220
+            C 178 300 195 370 220 400
+            C 210 320 215 250 235 210
+            C 228 300 250 370 275 400
+            C 260 330 265 260 245 210
+            C 265 280 290 340 320 415
+            C 305 350 302 280 290 220
+            C 302 280 315 340 340 400
+            C 350 340 352 270 340 210
+            C 365 260 360 320 350 380
+            C 365 320 360 240 330 170
+            C 300 90 260 60 230 60 Z"
+            fill="url(#hairGrad)"/>
+
+          <!-- ===== Face ===== -->
+          <g id="face">
+            <path d="M170 190
+              C 168 260 178 320 230 335
+              C 282 320 292 260 290 190
+              C 290 130 260 100 230 100
+              C 200 100 170 130 170 190 Z" fill="url(#skinGrad)"/>
+
+            <!-- ears -->
+            <path d="M168 210 q-14 6 -10 26 q4 14 16 12 Z" fill="url(#skinGrad)"/>
+            <path d="M292 210 q14 6 10 26 q-4 14 -16 12 Z" fill="url(#skinGrad)"/>
+
+            <!-- cheeks -->
+            <ellipse cx="188" cy="255" rx="20" ry="12" fill="url(#cheekGrad)"/>
+            <ellipse cx="272" cy="255" rx="20" ry="12" fill="url(#cheekGrad)"/>
+
+            <!-- eyebrows -->
+            <path d="M180 205 q18 -14 40 -6" stroke="#4a3a2a" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <path d="M240 199 q22 -8 40 6" stroke="#4a3a2a" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+            <!-- ===== EYES (structured for JS targeting) ===== -->
+            <g id="leftEye">
+              <path d="M177 224 q23 -18 46 0 q-23 18 -46 0 Z" fill="#fff"/>
+              <path d="M177 224 q23 -18 46 0" stroke="#2a1f45" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <clipPath id="leftEyeClip">
+                <path d="M179 224 q21 -15.5 42 0 q-21 15.5 -42 0 Z"/>
+              </clipPath>
+              <g clip-path="url(#leftEyeClip)">
+                <circle id="leftPupil" class="pupil" cx="200" cy="224" r="11" fill="#6d28d9"/>
+                <circle id="leftPupilCore" class="pupil-core" cx="200" cy="224" r="5" fill="#1a0f33"/>
+                <circle id="leftPupilShine" class="pupil-shine" cx="196" cy="220" r="2.6" fill="#ffffff"/>
+              </g>
+              <path id="leftLid" d="M177 224 q23 -18 46 0" stroke="none" fill="url(#skinGrad)" opacity="0" />
+            </g>
+
+            <g id="rightEye">
+              <path d="M237 224 q23 -18 46 0 q-23 18 -46 0 Z" fill="#fff"/>
+              <path d="M237 224 q23 -18 46 0" stroke="#2a1f45" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <clipPath id="rightEyeClip">
+                <path d="M239 224 q21 -15.5 42 0 q-21 15.5 -42 0 Z"/>
+              </clipPath>
+              <g clip-path="url(#rightEyeClip)">
+                <circle id="rightPupil" class="pupil" cx="260" cy="224" r="11" fill="#6d28d9"/>
+                <circle id="rightPupilCore" class="pupil-core" cx="260" cy="224" r="5" fill="#1a0f33"/>
+                <circle id="rightPupilShine" class="pupil-shine" cx="256" cy="220" r="2.6" fill="#ffffff"/>
+              </g>
+              <path id="rightLid" d="M237 224 q23 -18 46 0" stroke="none" fill="url(#skinGrad)" opacity="0" />
+            </g>
+
+            <!-- eyelid overlays used for blinking (animated via JS/CSS) -->
+            <rect id="leftLidCover" x="175" y="200" width="52" height="0" fill="url(#skinGrad)"/>
+            <rect id="rightLidCover" x="235" y="200" width="52" height="0" fill="url(#skinGrad)"/>
+
+            <!-- nose -->
+            <path d="M230 232 q-3 14 -8 20 q6 5 12 0" stroke="#d9a980" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+            <!-- mouth -->
+            <path id="mouth" d="M212 278 q18 12 36 0" stroke="#b5563f" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M215 281 q15 7 30 0" stroke="#e8836a" stroke-width="1.5" fill="none" opacity="0.5"/>
+          </g>
+
+          <!-- ===== Hair front layer (over forehead, with highlight) ===== -->
+          <path id="hairFront" d="M230 62
+            C 160 62 120 116 120 188
+            C 128 158 145 122 178 100
+            C 158 124 148 154 150 182
+            C 168 140 195 112 226 104
+            C 208 128 198 156 200 184
+            C 214 146 236 118 268 112
+            C 252 132 244 158 246 184
+            C 262 148 284 126 310 126
+            C 330 150 338 178 336 208
+            C 344 170 342 128 318 98
+            C 294 68 262 62 230 62 Z"
+            fill="url(#hairGrad)"/>
+
+          <path d="M178 100 C158 124 148 154 150 182 C 158 148 172 116 196 100 Z" fill="url(#hairHighlight)" opacity="0.65"/>
+          <path d="M268 112 C 292 122 306 144 310 168 C 300 142 284 122 262 116 Z" fill="url(#hairHighlight)" opacity="0.5"/>
+
+          <!-- side strands -->
+          <path d="M150 200 q-16 60 5 130 q-22 -60 -10 -132 Z" fill="url(#hairGrad)"/>
+          <path d="M312 200 q16 60 -5 130 q22 -60 10 -132 Z" fill="url(#hairGrad)"/>
+
+          <!-- headphone / tech accessory (small developer detail) -->
+          <path d="M155 205 q-5 -70 75 -78 q80 8 75 78" stroke="#2a2450" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.9"/>
+          <circle cx="155" cy="212" r="11" fill="#241f47" stroke="url(#clothTrim)" stroke-width="2"/>
+          <circle cx="305" cy="212" r="11" fill="#241f47" stroke="url(#clothTrim)" stroke-width="2"/>
+          <circle cx="155" cy="212" r="3.5" fill="#4fd1ff"/>
+          <circle cx="305" cy="212" r="3.5" fill="#4fd1ff"/>
+
+        </svg>
+        <p class="character-caption">// eyes track cursor · move your mouse</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-kicker">About</span>
+        <h2>Building a foundation, one project at a time</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm Shashwati Pingalkar, a B.Tech Data Science student at Savitribai Phule Pune University (SPPU). My work right now is focused on building strong fundamentals — in programming, data structures and algorithms, data science, machine learning, and software engineering practice.</p>
+          <p>I'm still early in this journey. Rather than claiming finished expertise, I spend my time writing code, breaking things, reading documentation, and rebuilding projects until they work the way I intend. Each project below reflects something I was learning at the time I built it.</p>
+          <p>Alongside coursework, I'm preparing for graduate study abroad, with an interest in data science and machine learning engineering as long-term directions.</p>
+        </div>
+
+        <div class="about-card glass reveal">
+          <h3>At a glance</h3>
+          <ul class="about-facts">
+            <li><span>Education</span><span>B.Tech Data Science</span></li>
+            <li><span>University</span><span>SPPU, Pune</span></li>
+            <li><span>Focus tracks</span><span>DS · ML · SWE</span></li>
+            <li><span>Currently</span><span>Master's prep</span></li>
+            <li><span>GitHub</span><span>@shashwatip2906</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CURRENTLY LEARNING ================= -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-kicker">Currently learning</span>
+        <h2>Tools and concepts I'm actively working with</h2>
+        <p class="lede">A working set, not a mastery list — these are the languages, ideas, and practices currently in rotation.</p>
+      </div>
+
+      <div class="skills-grid reveal" role="list">
+        <span class="skill-tag" role="listitem" tabindex="0">Python</span>
+        <span class="skill-tag" role="listitem" tabindex="0">C</span>
+        <span class="skill-tag" role="listitem" tabindex="0">C++</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Java</span>
+        <span class="skill-tag" role="listitem" tabindex="0">SQL</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Data Structures &amp; Algorithms</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Algorithm Analysis</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Big-O</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Data Science</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Machine Learning</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Software Engineering</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Git</span>
+        <span class="skill-tag" role="listitem" tabindex="0">GitHub</span>
+        <span class="skill-tag" role="listitem" tabindex="0">APIs</span>
+        <span class="skill-tag" role="listitem" tabindex="0">JSON</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Testing</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Debugging</span>
+        <span class="skill-tag" role="listitem" tabindex="0">Logging</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-kicker">Projects</span>
+        <h2>Things I've built to learn by doing</h2>
+        <p class="lede">Each project pushed a different skill — from UI state management to real-world domain modelling.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card glass reveal">
+          <svg class="project-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <rect x="6" y="8" width="40" height="36" rx="6" fill="#1e1b3a" stroke="#8b5cf6" stroke-width="2"/>
+            <path d="M14 20h24M14 27h16M14 34h20" stroke="#4fd1ff" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="38" cy="14" r="3" fill="#c084fc"/>
+          </svg>
+          <h3>Expense Tracker</h3>
+          <p>A personal expense-management application for logging spending, categorizing transactions, and reviewing where money goes over time.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Personal Finance</span>
+            <span>CRUD</span>
+          </div>
+          <p class="project-note">Repository link not yet published.</p>
+        </article>
+
+        <article class="project-card glass reveal">
+          <svg class="project-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <rect x="8" y="10" width="36" height="32" rx="5" fill="#1e1b3a" stroke="#4fd1ff" stroke-width="2"/>
+            <circle cx="18" cy="22" r="4" fill="#8b5cf6"/>
+            <path d="M12 34c1-5 4-7 6-7s5 2 6 7" stroke="#c084fc" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M32 20h6M32 26h6M32 32h4" stroke="#4fd1ff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <h3>Attendance Tracker</h3>
+          <p>An attendance-management application for recording presence, tracking patterns over a term, and keeping records organized and accessible.</p>
+          <div class="project-tags">
+            <span>Data Management</span>
+            <span>Records</span>
+          </div>
+          <p class="project-note">Repository link not yet published.</p>
+        </article>
+
+        <article class="project-card glass reveal">
+          <svg class="project-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <rect x="10" y="6" width="32" height="40" rx="4" fill="#1e1b3a" stroke="#c084fc" stroke-width="2"/>
+            <path d="M17 16q9-4 18 0M17 24q9-4 18 0M17 32q9-4 18 0" stroke="#8b5cf6" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <path d="M34 12l4-4 3 3-4 4z" fill="#4fd1ff"/>
+          </svg>
+          <h3>StudyNote</h3>
+          <p>A tool that converts typed text into handwritten-style notes using canvas rendering and export, aimed at making digital notes feel more personal.</p>
+          <div class="project-tags">
+            <span>Canvas API</span>
+            <span>JavaScript</span>
+            <span>Rendering</span>
+          </div>
+          <p class="project-note">Repository link not yet published.</p>
+        </article>
+
+        <article class="project-card glass reveal">
+          <svg class="project-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+            <circle cx="26" cy="26" r="18" fill="none" stroke="#4fd1ff" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="26" cy="10" r="3" fill="#8b5cf6"/>
+            <circle cx="40" cy="30" r="2.5" fill="#c084fc"/>
+            <circle cx="14" cy="34" r="2" fill="#4fd1ff"/>
+            <path d="M26 10a18 18 0 0114 26" stroke="#8b5cf6" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+            <circle cx="26" cy="26" r="3" fill="#fff"/>
+          </svg>
+          <h3>LEO Satellite Collision &amp; Space Debris System</h3>
+          <p>An SIH 2026 project focused on satellite conjunction analysis and collision-risk assessment for objects in low Earth orbit.</p>
+          <div class="project-tags">
+            <span>SIH 2026</span>
+            <span>Data Science</span>
+            <span>Risk Modelling</span>
+          </div>
+          <p class="project-note">Repository link not yet published.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LEARNING JOURNEY ================= -->
+  <section id="journey">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-kicker">Learning journey</span>
+        <h2>How the path has progressed so far</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <h3>Programming Fundamentals</h3>
+          <p>Variables, control flow, functions — the base layer everything else sits on.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3>Python / C / C++ / Java</h3>
+          <p>Learning multiple languages to understand different paradigms and memory models.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3>DSA &amp; Algorithms</h3>
+          <p>Data structures, algorithmic thinking, and analyzing complexity with Big-O.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3>Data Science</h3>
+          <p>Working with data — cleaning, analysis, and drawing structured conclusions.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3>Machine Learning</h3>
+          <p>Extending data science into predictive modelling and pattern recognition.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3>Software Engineering</h3>
+          <p>Version control, testing, debugging, and logging — writing code meant to last.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3>Projects</h3>
+          <p>Applying everything above to real, self-directed builds.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h3>Master's Preparation</h3>
+          <p>Where I am now — preparing applications for graduate study abroad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MASTER'S GOAL ================= -->
+  <section id="masters">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-kicker">Master's goal</span>
+        <h2>Preparing for graduate study abroad</h2>
+      </div>
+
+      <div class="goal-panel glass reveal">
+        <div>
+          <p>I'm currently preparing application materials for Master's programs, with a particular interest in data science and machine learning. I'm exploring options across a few regions rather than a single fixed plan.</p>
+          <p>This preparation runs alongside my coursework and project work — the two are meant to reinforce each other rather than compete for time.</p>
+        </div>
+        <div class="destinations">
+          <div class="destination"><span class="flag-dot" aria-hidden="true"></span>Austria</div>
+          <div class="destination"><span class="flag-dot" aria-hidden="true"></span>Europe (public universities)</div>
+          <div class="destination"><span class="flag-dot" aria-hidden="true"></span>Japan</div>
+          <div class="destination"><span class="flag-dot" aria-hidden="true"></span>South Korea</div>
+          <div class="destination"><span class="flag-dot" aria-hidden="true"></span>Singapore</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BUILD PHILOSOPHY ================= -->
+  <section id="philosophy">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-kicker">Build philosophy</span>
+        <h2>How I approach learning something new</h2>
+      </div>
+
+      <div class="philosophy-flow reveal" id="philosophyFlow">
+        <span class="philosophy-step">LEARN</span>
+        <span class="philosophy-arrow" aria-hidden="true">→</span>
+        <span class="philosophy-step">UNDERSTAND</span>
+        <span class="philosophy-arrow" aria-hidden="true">→</span>
+        <span class="philosophy-step">PRACTICE</span>
+        <span class="philosophy-arrow" aria-hidden="true">→</span>
+        <span class="philosophy-step">BUILD</span>
+        <span class="philosophy-arrow" aria-hidden="true">→</span>
+        <span class="philosophy-step">DOCUMENT</span>
+        <span class="philosophy-arrow" aria-hidden="true">→</span>
+        <span class="philosophy-step">PUBLISH</span>
+        <span class="philosophy-arrow" aria-hidden="true">→</span>
+        <span class="philosophy-step">IMPROVE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ONLINE PRESENCE ================= -->
+  <section id="presence">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-kicker">Online presence</span>
+        <h2>Where to find more</h2>
+        <p class="lede">GitHub is active and linked directly. Other profiles are listed for reference — configure real URLs in <code>script.js</code> under <code>SOCIAL_LINKS</code> as they're created.</p>
+      </div>
+
+      <div class="presence-grid" id="presenceGrid">
+        <!-- populated by script.js from SOCIAL_LINKS -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© 2026 Shashwati Pingalkar. Built with HTML, CSS &amp; vanilla JavaScript.</span>
+    <a href="https://github.com/shashwatip2906" target="_blank" rel="noopener noreferrer">github.com/shashwatip2906</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
