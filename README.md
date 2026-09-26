@@ -1,185 +1,99 @@
-# Shashwati Pingalkar — Interactive Portfolio
+# 🌐 My Portfolio
 
-An anime-inspired, interactive personal portfolio for **Shashwati Pingalkar**, a B.Tech Data Science student at SPPU Pune. The centerpiece is an original anime-style character built entirely in SVG, whose eyes follow the visitor's cursor in real time.
+Welcome to my personal portfolio website!
+This repository contains the source code for my portfolio, built using HTML, CSS, and JavaScript.
 
-No frameworks, no build step, no backend — just HTML, CSS, and vanilla JavaScript.
+## 🔗 Live Portfolio
 
----
+### 👉 [Open My Portfolio](./index.html)
 
-## What this is
+Click the link above to open the `index.html` page directly from the repository.
 
-A single-page portfolio with:
-
-- A hero section featuring an original hand-coded SVG character with cursor-tracking eyes
-- About, currently-learning, projects, learning-journey timeline, Master's-goal, build-philosophy, and online-presence sections
-- A dark, glassmorphism-based visual design with violet/blue neon accents and a subtle animated star field
-- Full keyboard accessibility, semantic HTML, and `prefers-reduced-motion` support
-- Automatic fallback to idle animation (no cursor tracking) on touch devices
-
-Everything is static. Open `index.html` in a browser and it works.
+> **Note:** For a properly hosted website, enable **GitHub Pages** for this repository. Once enabled, you can replace the link above with your GitHub Pages URL.
 
 ---
 
-## Project structure
+## 📁 Project Structure
 
-```
-/
-├── index.html      Markup for all sections + the inline SVG character
-├── style.css       Design system, layout, responsive rules, animations
-├── script.js       Eye tracking, star field, scroll reveal, social links config
-└── README.md       This file
+```text
+.
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── images/
+│   └── icons/
+└── README.md
 ```
 
----
+## ✨ Features
 
-## Running locally
+* 👩‍💻 Personal introduction
+* 🎓 Education and academic background
+* 💻 Technical skills
+* 🚀 Projects
+* 📚 Current learning journey
+* 🏆 Achievements and activities
+* 🔗 Links to professional and developer platforms
+* 📩 Contact information
+* 📱 Responsive design
 
-No installation, no dependencies, no build step.
+## 🛠️ Technologies Used
 
-**Option 1 — just open it**
-Double-click `index.html`, or open it in your browser directly.
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub
 
-**Option 2 — local server (recommended for accurate testing)**
-Some browsers restrict certain features when loading files via `file://`. A local server avoids that:
+## 🚀 How to View the Website
 
-```bash
-# Python 3
-python3 -m http.server 8000
+### Option 1 — Open Locally
 
-# then visit:
-# http://localhost:8000
-```
+1. Download or open this repository.
+2. Locate `index.html`.
+3. Double-click `index.html`.
+4. The portfolio will open in your browser.
 
-or, with Node installed:
+### Option 2 — GitHub Pages
 
-```bash
-npx serve .
-```
+This project can be deployed using **GitHub Pages**.
 
----
+After deployment, the website can be accessed through its GitHub Pages URL.
 
-## How the cursor-following eyes work
+## 📌 Repository
 
-The character is a single inline `<svg id="character-svg">` element in `index.html`. Inside it:
-
-```html
-<g id="leftEye">
-  ...
-  <circle id="leftPupil" class="pupil" .../>
-</g>
-<g id="rightEye">
-  ...
-  <circle id="rightPupil" class="pupil" .../>
-</g>
-```
-
-In `script.js`, the `initEyeTracking()` function:
-
-1. Listens for `mousemove` on `window` (desktop only).
-2. Converts the mouse's screen coordinates into the SVG's internal coordinate space using `getScreenCTM().inverse()`, so tracking stays accurate at any page zoom or layout size.
-3. For each eye, computes the vector from the eye's center to the cursor position.
-4. Normalizes that vector and **clamps** its length to a maximum radius (`maxR`), so the pupil can never visually leave the eye — this is verified mathematically (see below).
-5. Smoothly interpolates (lerps) the pupil's current offset toward the target offset every animation frame via `requestAnimationFrame`, instead of snapping instantly, which gives the natural "follow" feeling.
-6. Applies the offset using a CSS `transform: translate(...)` on the pupil, iris shine, and pupil core together, so they move as one unit.
-
-Additionally:
-
-- **Blinking** — a randomized timer (roughly every 2.6–5.8 seconds) triggers a short blink animation using an animated eyelid-cover rectangle, driven by a sine curve for a natural close/open motion.
-- **Breathing/idle sway** — the whole character SVG gets a very subtle sinusoidal `translate` applied continuously, simulating slow breathing and a slight head bob.
-- **Touch devices** — detected via `matchMedia("(hover: none), (pointer: coarse)")`. On these devices, cursor tracking is disabled entirely and the eyes instead drift toward randomized idle gaze points every few seconds.
-- **`prefers-reduced-motion`** — when enabled, blinking, breathing, and the star field's motion are all disabled or reduced to a single static frame, and pupils snap directly to position instead of easing.
+You can explore the complete source code and project files in this repository.
 
 ---
 
-## Customizing your information
+## 👩‍💻 About Me
 
-All personal content lives in plain HTML inside `index.html` — no templating engine, so it's safe to edit directly.
+I am a Data Science student interested in building practical projects, developing strong programming and problem-solving skills, and continuously learning technologies across software engineering, data science, and machine learning.
 
-| What to change | Where |
-|---|---|
-| Name, role, hero description | `<section class="hero">` in `index.html` |
-| About text | `<section id="about">` |
-| Skill tags | `<div class="skills-grid">` — add/remove `<span class="skill-tag">` elements |
-| Projects | `<section id="projects">` — duplicate a `<article class="project-card">` block |
-| Timeline steps | `<section id="journey">` — duplicate a `<div class="timeline-item">` block |
-| Master's-goal destinations | `<section id="masters">` — edit `<div class="destination">` entries |
-| Colors / fonts / spacing | CSS custom properties at the top of `style.css` under `:root` |
+I am currently working on strengthening my technical portfolio through projects, coding practice, open-source platforms, and continuous learning.
 
-The character SVG itself lives inline inside the hero section, tagged with an HTML comment (`<!-- ORIGINAL ANIME-STYLE CHARACTER ... -->`). You can restyle colors by editing the gradient `<stop>` values inside `<defs>` (e.g. `hairGrad`, `skinGrad`, `clothGrad`) without touching the geometry.
+## 🔗 Find Me Online
 
----
+* **GitHub:** [My GitHub Profile](https://github.com/shashwatip2906)
+* **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com)
+* **Kaggle:** [My Kaggle Profile](https://www.kaggle.com/)
+* **Dev.to:** [My Dev.to Profile](https://dev.to/)
+* **X:** [My X Profile](https://x.com/)
 
-## Adding / updating social links
-
-All social links are controlled from **one place**: the `SOCIAL_LINKS` object near the top of `script.js`.
-
-```js
-const SOCIAL_LINKS = {
-  GitHub:   { url: "https://github.com/shashwatip2906", active: true },
-  LinkedIn: { url: "", active: false },
-  Kaggle:   { url: "", active: false },
-  "Dev.to": { url: "", active: false },
-  Substack: { url: "", active: false },
-  X:        { url: "", active: false },
-  CodePen:  { url: "", active: false },
-  Dribbble: { url: "", active: false },
-  Behance:  { url: "", active: false }
-};
-```
-
-To activate a profile once you have a real URL:
-
-```js
-LinkedIn: { url: "https://linkedin.com/in/your-actual-handle", active: true },
-```
-
-Cards for `active: false` entries still render (so the section stays visually complete) but show "Coming soon" instead of a link, and aren't clickable. No URLs are invented anywhere in this project — inactive entries are intentionally left blank until you fill them in.
 
 ---
 
-## Deploying with GitHub Pages
+## 📄 License
 
-This project needs no build step, so GitHub Pages can serve it directly.
+This project is intended for personal and portfolio purposes.
 
-1. Create a repository named exactly:
-   ```
-   shashwatip2906.github.io
-   ```
-   (A repository with this exact name — `<username>.github.io` — is what GitHub Pages uses for a user's root site.)
-
-2. Push these four files to the root of that repository:
-   ```bash
-   git init
-   git add index.html style.css script.js README.md
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/shashwatip2906/shashwatip2906.github.io.git
-   git push -u origin main
-   ```
-
-3. In the repository settings on GitHub:
-   - Go to **Settings → Pages**
-   - Under **Source**, select the `main` branch and the `/ (root)` folder
-   - Save
-
-4. Wait a minute or two, then visit:
-   ```
-   https://shashwatip2906.github.io
-   ```
-
-No further configuration is required — there's no build process, no environment variables, and no server-side code.
+The source code and design are **not licensed for reuse, redistribution, or modification without permission**.
 
 ---
 
-## Accessibility notes
+### ⭐ Portfolio
 
-- All interactive elements (nav links, skill tags, buttons) are keyboard-focusable with visible focus outlines.
-- The character SVG includes `<title>` and `<desc>` elements for screen readers.
-- Motion (blinking, breathing, star field twinkle, scroll reveals) is minimized automatically when the visitor's OS has "reduce motion" enabled.
-- Color contrast between text and background follows WCAG-friendly ratios throughout.
+If you are viewing this repository, start here:
 
----
-
-## Notes on content accuracy
-
-Every biographical detail, project description, and skill listed reflects only what was explicitly provided — no fabricated GitHub repository links, no invented university names or scholarships, no fake statistics, contribution graphs, or testimonials. Project cards without a public repository link say so plainly rather than pointing to a fake URL.
+**👉 [Open `index.html`](./index.html)**
