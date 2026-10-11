@@ -46,21 +46,6 @@ Click the link above to open the `index.html` page directly from the repository.
 * Git
 * GitHub
 
-## 🚀 How to View the Website
-
-### Option 1 — Open Locally
-
-1. Download or open this repository.
-2. Locate `index.html`.
-3. Double-click `index.html`.
-4. The portfolio will open in your browser.
-
-### Option 2 — GitHub Pages
-
-This project can be deployed using **GitHub Pages**.
-
-After deployment, the website can be accessed through its GitHub Pages URL.
-
 ## 📌 Repository
 
 You can explore the complete source code and project files in this repository.
