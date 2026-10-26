@@ -5,7 +5,7 @@ This repository contains the source code for my portfolio, built using HTML, CSS
 
 ## 🔗 Live Portfolio
 
-### 👉 [Open My Portfolio]([https://personal-portfolio-dif52m20v-shashwatip2906.vercel.app/])
+### 👉 [Open My Portfolio]([https://personal-portfolio-sigma-lilac-34.vercel.app?_vercel_share=HGidT4p4JvBtIkqbqWHTsSCDsjQB0p9n])
 
 Click the link above to open the `index.html` page directly from the repository.
 
