@@ -9,7 +9,6 @@ This repository contains the source code for my portfolio, built using HTML, CSS
 
 Click the link above to open the `index.html` page directly from the repository.
 
-> **Note:** For a properly hosted website, enable **GitHub Pages** for this repository. Once enabled, you can replace the link above with your GitHub Pages URL.
 
 ---
 
