@@ -1,18 +1,18 @@
-# 🌐 My Portfolio
+#  My Portfolio
 
 Welcome to my personal portfolio website!
 This repository contains the source code for my portfolio, built using HTML, CSS, and JavaScript.
 
-## 🔗 Live Portfolio
+##  Live Portfolio
 
-### 👉 [Open My Portfolio]([https://personal-portfolio-sigma-lilac-34.vercel.app?_vercel_share=HGidT4p4JvBtIkqbqWHTsSCDsjQB0p9n])
+###  [Open My Portfolio](https://personal-portfolio-sigma-lilac-34.vercel.app?_vercel_share=HGidT4p4JvBtIkqbqWHTsSCDsjQB0p9n)
 
 Click the link above to open the `index.html` page directly from the repository.
 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 .
@@ -25,19 +25,19 @@ Click the link above to open the `index.html` page directly from the repository.
 └── README.md
 ```
 
-## ✨ Features
+##  Features
 
-* 👩‍💻 Personal introduction
-* 🎓 Education and academic background
-* 💻 Technical skills
-* 🚀 Projects
-* 📚 Current learning journey
-* 🏆 Achievements and activities
-* 🔗 Links to professional and developer platforms
-* 📩 Contact information
-* 📱 Responsive design
+*  Personal introduction
+*  Education and academic background
+*  Technical skills
+*  Projects
+*  Current learning journey
+*  Achievements and activities
+*  Links to professional and developer platforms
+*  Contact information
+*  Responsive design
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * HTML5
 * CSS3
@@ -45,19 +45,19 @@ Click the link above to open the `index.html` page directly from the repository.
 * Git
 * GitHub
 
-## 📌 Repository
+##  Repository
 
 You can explore the complete source code and project files in this repository.
 
 ---
 
-## 👩‍💻 About Me
+##  About Me
 
 I am a Data Science student interested in building practical projects, developing strong programming and problem-solving skills, and continuously learning technologies across software engineering, data science, and machine learning.
 
 I am currently working on strengthening my technical portfolio through projects, coding practice, open-source platforms, and continuous learning.
 
-## 🔗 Find Me Online
+##  Find Me Online
 
 * **GitHub:** [My GitHub Profile](https://github.com/shashwatip2906)
 * **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com)
@@ -68,7 +68,7 @@ I am currently working on strengthening my technical portfolio through projects,
 
 ---
 
-## 📄 License
+##  License
 
 This project is intended for personal and portfolio purposes.
 
@@ -76,8 +76,8 @@ The source code and design are **not licensed for reuse, redistribution, or modi
 
 ---
 
-### ⭐ Portfolio
+###  Portfolio
 
 If you are viewing this repository, start here:
 
-**👉 [Open `index.html`](./index.html)**
+** [Open `index.html`](./index.html)**
